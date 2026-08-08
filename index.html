@@ -1,0 +1,285 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Cars | 10 Car Collection</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #1e90ff;
+        }
+
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
+                url("https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1600&q=80")
+                center/cover;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .cars {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 45px;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .car-card {
+            background: #171717;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+            border: 1px solid #292929;
+        }
+
+        .car-card:hover {
+            transform: translateY(-8px);
+            border-color: #087cff;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .car-info {
+            padding: 22px;
+        }
+
+        .car-info h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .car-info p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #1e90ff;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BMW</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cars">Cars</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>BMW COLLECTION</h1>
+        <p>Discover 10 iconic BMW cars in one place.</p>
+    </div>
+</section>
+
+<section class="cars" id="cars">
+
+    <h2 class="section-title">10 BMW Cars</h2>
+
+    <div class="car-grid">
+
+        <!-- 1 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW 2 Series</h3>
+                <p>Sporty and compact luxury performance.</p>
+                <div class="price">₹45.8 Lakh*</div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW 3 Series</h3>
+                <p>A legendary sports sedan with premium comfort.</p>
+                <div class="price">₹62.7 Lakh*</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW 5 Series</h3>
+                <p>Executive luxury combined with dynamic driving.</p>
+                <div class="price">₹76.6 Lakh*</div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW 7 Series</h3>
+                <p>Flagship luxury with advanced technology.</p>
+                <div class="price">₹1.85 Crore*</div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1520050206274-a1ae44613e6d?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW X1</h3>
+                <p>Premium compact SUV designed for everyday adventure.</p>
+                <div class="price">₹52.9 Lakh*</div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW X3</h3>
+                <p>Powerful SUV with luxury and versatile performance.</p>
+                <div class="price">₹76.0 Lakh*</div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW X5</h3>
+                <p>Luxury SUV offering space, power and technology.</p>
+                <div class="price">₹96.9 Lakh*</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW i5</h3>
+                <p>Electric executive sedan with modern performance.</p>
+                <div class="price">₹1.19 Crore*</div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1555353540-64580b51c258?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW M4</h3>
+                <p>High-performance coupe built for driving enthusiasts.</p>
+                <div class="price">₹1.60 Crore*</div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=80">
+            <div class="car-info">
+                <h3>BMW M2</h3>
+                <p>Compact M performance with an aggressive character.</p>
+                <div class="price">₹1.06 Crore*</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 BMW Car Collection | Demo Website</p>
+    <p>*Prices are illustrative and may change.</p>
+</footer>
+
+</body>
+</html>
